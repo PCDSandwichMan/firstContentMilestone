@@ -1,0 +1,25 @@
+/* General Rulesets */
+
+* {
+    border: solid red 1px !important;
+}
+
+/* Header Rulesets */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcbad4;
+
+}
+
+.home-header {
+    display: block;
+}
+
+.navbar li {
+    display: inline-block;
+
+}
