@@ -2,7 +2,7 @@
 
 font-family: 'Baloo Chettan', cursive;  [ Header Title ]
 font-family: 'Indie Flower', cursive;   [ Nav-Bar]
-
+font-family: 'Nunito', sans-serif; [main paragraph usage]
 */
 
 
@@ -13,43 +13,89 @@ font-family: 'Indie Flower', cursive;   [ Nav-Bar]
 /* * {
     border: solid red 1px !important;
 } */
+
 body {
     background-color: #aae7f0;
 }
 
 /* Header Rulesets */
 
-.container {
+.title-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: #f6c8ff;
     border: #baa5ff solid 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .header-block {
     display: flex;
+    flex-direction: column;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
     align-content: center;
 }
 
-.home-header {
+.header-box h1 {
     display: block;
     font-family: 'Baloo Chettan', cursive;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: .5rem;
     margin-top: 1rem;
 }
 
-.navbar li {
-    display: inline-block;
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.5rem;
-    margin: 0 2rem;
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
 }
 
-.nav-item {
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
     color: black;
-    padding: .25rem;
     text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+}
+
+
+ /* Introduction Rulesets */
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio h1 {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.bio p {
+    text-align: center;
+    padding: 1rem 7rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: .95rem;
+}
+
+/* Main Page Rulesets */
+
+.main-container {
+    
 }
