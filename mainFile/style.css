@@ -15,7 +15,7 @@ font-family: 'Nunito', sans-serif; [main paragraph usage]
 } */
 
 body {
-    background-color: #aae7f0;
+    background-image: url("./images/brickBackground.jpeg"); /* Add a castle background imagae and play around with blend mode*/
 }
 
 /* Header Rulesets */
@@ -101,6 +101,35 @@ body {
 
 /* Main Page Rulesets */
 
-.main-container {
-
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#459fff50;
 }
+
+th {
+    border: maroon solid .15rem;
+    font-size: 1.5rem;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+td {
+    width:auto;
+    height:250px;
+    text-align:center; 
+    vertical-align:middle;
+    font-family: 'Nunito', sans-serif;
+    border: maroon solid .15rem;
+    padding: 1px;
+}
+
+td.image {
+    width:250px;
+    height:250px;
+}
+
+td img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
