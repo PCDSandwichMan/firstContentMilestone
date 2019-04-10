@@ -15,7 +15,14 @@ font-family: 'Nunito', sans-serif; [main paragraph usage]
 } */
 
 body {
-    background-image: url("./images/brickBackground.jpeg"); /* Add a castle background imagae and play around with blend mode*/
+    /* We could try to use blend mode for our back ground? */
+    background-image: url("./images/paintMix.jpeg");
+    
+    background-color: #6b1cba;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
 }
 
 /* Header Rulesets */
@@ -126,6 +133,12 @@ td {
 td.image {
     width:250px;
     height:250px;
+}
+
+td.review {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
 }
 
 td img {
