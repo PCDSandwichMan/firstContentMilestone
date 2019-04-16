@@ -1,17 +1,14 @@
 /* API font reference key 
-
-?font-family: 'Baloo Chettan', cursive;  [ Header Title ]
+? font-family: 'Baloo Chettan', cursive;  [ Header Title ]
 ? font-family: 'Indie Flower', cursive;   [ Nav-Bar]
 ? font-family: 'Nunito', sans-serif; [main paragraph usage]
 */
 
-/* General Rulesets */
+/* ? Outside stylesheet and Font API imports  */
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan|Indie+Flower|Nunito");
 
-/* ! This just used for temporary testing
- * {
-    border: solid red 1px !important;
-} 
-*/
+/* ! General Rulesets */
 
 body {
   background-image: url("../images/paintMix.jpeg");
@@ -22,6 +19,7 @@ body {
   background-blend-mode: luminosity;
 }
 
+
 /* ! Header Rulesets */
 
 .title-box {
@@ -29,8 +27,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #f6c8ff;
-  border: #baa5ff solid 1.5rem;
+  background-color: #f6c8ffdc;
+  border: #baa5ffab solid 1.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -73,22 +71,38 @@ body {
   text-decoration: none;
   font-family: "Indie Flower", cursive;
   font-size: 1.75rem;
+  cursor: pointer;
 }
 
-.dropdown-menu {
+.dropdown-container {
+  display: none;
   position: absolute;
+  width: 10rem;
+}
+.dropdown-container .dropdown-menu {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 8rem;
-  width: 7rem;
   background-color: #459ffff1;
   border: #1a77da solid 2px;
 }
+.dropdown-container .dropdown-menu ul {
+  list-style: none;
+  flex-direction: column;
+  padding: 0px;
+  width: 100%;
+}
 
-.dropdown-item {
+.dropdown-container .dropdown-menu li {
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  padding: 0.5rem;
+  border: #1a77da solid 2px;
+}
+
+.open {
+  display: block;
 }
 
 /* ! Introduction Rulesets */
@@ -154,4 +168,43 @@ td.review {
 td img {
   max-height: 100%;
   max-width: 100%;
+}
+
+/* ! Landing Page Footer  */
+
+
+footer {
+  border: maroon solid 0.15rem;
+  margin-top: .5rem;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container ul {
+  list-style: none;
+}
+
+.flex-container li {
+  display: inline-block;  
+}
+
+.flex-container a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+/* ! Icons */
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
 }
