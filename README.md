@@ -4,3 +4,4 @@ This milestone project focuses on a few of my favorite tools/languages that I ha
 -CSS
   >Flex design use
 -HTML
+  >FontAwesome

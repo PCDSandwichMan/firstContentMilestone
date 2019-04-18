@@ -5,13 +5,13 @@
 */
 
 /* ? Outside stylesheet and Font API imports  */
-@import url(font-awesome.min.css);
+@import url(/assets/fonts/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan|Indie+Flower|Nunito");
 
 /* ! General Rulesets */
 
 body {
-  background-image: url("../images/paintMix.jpeg");
+  background-image: url("/images/paintMix.jpeg");
   background-color: #6b1cba;
   background-repeat: no-repeat;
   background-position: center;
