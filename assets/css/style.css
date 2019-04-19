@@ -19,7 +19,6 @@ body {
   background-blend-mode: luminosity;
 }
 
-
 /* ! Header Rulesets */
 
 .title-box {
@@ -172,10 +171,9 @@ td img {
 
 /* ! Landing Page Footer  */
 
-
 footer {
   border: maroon solid 0.15rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   width: 100%;
 }
 
@@ -189,14 +187,13 @@ footer {
 }
 
 .flex-container li {
-  display: inline-block;  
+  display: inline-block;
 }
 
 .flex-container a {
   text-decoration: none;
   color: black;
-  font-family: 'Nunito', sans-serif;
-
+  font-family: "Nunito", sans-serif;
 }
 
 /* ! Icons */
