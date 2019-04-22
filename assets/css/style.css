@@ -5,20 +5,18 @@
 */
 
 /* ? Outside stylesheet and Font API imports  */
-@import url(/assets/fonts/font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan|Indie+Flower|Nunito");
 
 /* ! General Rulesets */
 
 body {
-  background-image: url("/images/paintMix.jpeg");
-  background-color: #6b1cba;
+  background-image: url("darkCloud.jpg");
+  /* background-color: #6b1cba; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-blend-mode: luminosity;
 }
-
 
 /* ! Header Rulesets */
 
@@ -27,8 +25,8 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #f6c8ffdc;
-  border: #baa5ffab solid 1.5rem;
+  background-color: #459fff80;
+  border: #4577ff4f solid 1.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -172,39 +170,32 @@ td img {
 
 /* ! Landing Page Footer  */
 
-
 footer {
-  border: maroon solid 0.15rem;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
   width: 100%;
+  box-shadow: 0 50vh 0 50vh #4577ffe0;
 }
 
 .flex-container {
   display: flex;
   justify-content: space-around;
+  background-color: #4778ffe0;
+
 }
 
 .flex-container ul {
   list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .flex-container li {
-  display: inline-block;  
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
 }
 
-.flex-container a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Nunito', sans-serif;
-
-}
 
 /* ! Icons */
-.icon {
-  text-decoration: none;
-  border-bottom: none;
-  position: relative;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-}
+
