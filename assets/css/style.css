@@ -63,12 +63,17 @@ body {
   display: inline;
 }
 
+
 .navbar a {
   color: black;
   text-decoration: none;
   font-family: "Indie Flower", cursive;
   font-size: 1.75rem;
   cursor: pointer;
+}
+
+.navbar a:hover {
+  color: blue;
 }
 
 .dropdown-container {
@@ -189,11 +194,18 @@ footer {
   justify-content: space-around;
 }
 
-.flex-container li {
+.flex-container a {
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
 }
+
+.flex-container a:hover {
+  color: blue;
+}
+.
 
  /* ? Media Breakpoints 1083 and above we're good */
 
