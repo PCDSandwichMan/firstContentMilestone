@@ -7,5 +7,6 @@
         "latex",
         "plaintext",
         "scss"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
