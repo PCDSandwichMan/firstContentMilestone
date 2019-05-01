@@ -78,17 +78,16 @@ body {
 /* ! Dropdown menu */
 
 .dropdown-menu {
-  display: flex;
+  display: none;
   position: absolute;
   width: 10rem;
-  visibility: hidden;
   background-color: #459ffff1;
   border: #1a77da solid 2px;
 }
 .dropdown-menu ul {
-  list-style: none;
+  display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  list-style: none;
   padding: 0px;
   width: 100%;
 }
@@ -103,10 +102,6 @@ body {
 
 .dropdown-menu li:hover {
   color: blue;
-}
-
-.show {
-  visibility: visible;
 }
 
 /* ! Introduction Rulesets */
