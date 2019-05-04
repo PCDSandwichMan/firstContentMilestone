@@ -6,7 +6,8 @@
         "markdown",
         "latex",
         "plaintext",
-        "scss"
+        "scss",
+        "html"
     ],
     "liveServer.settings.port": 5501
 }

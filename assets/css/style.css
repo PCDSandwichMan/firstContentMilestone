@@ -1,20 +1,24 @@
 /* API font reference key 
-? font-family: 'Baloo Chettan', cursive;  [ Header Title ]
-? font-family: 'Indie Flower', cursive;   [ Nav-Bar]
-? font-family: 'Nunito', sans-serif; [main paragraph usage]
+? font-family: 'Montserrat', sans-serif;    [ Header Title ]
+? font-family: 'Cinzel', serif;    [main paragraph usage]
+? font-family: 'Raleway', sans-serif;   [ Nav-Bar]
 */
 
 /* ? Outside stylesheet and Font API imports  */
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Indie+Flower|Nunito');
+@import url("https://fonts.googleapis.com/css?family=Cinzel:700|Montserrat:600|Raleway:500,700");
 
 /* ! General Rulesets */
 
 body {
-  background-image: url('darkCloud.jpg');
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ),
+  url(../images/knightFight.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: luminosity;
 }
 
 /* ! Header Rulesets */
@@ -45,8 +49,9 @@ body {
 
 .header-box h1 {
   display: block;
-  font-family: 'Baloo Chettan', cursive;
-  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #C0C0C0;
+  font-size: 6rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
@@ -67,7 +72,8 @@ body {
 .navbar a {
   color: black;
   text-decoration: none;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Raleway', sans-serif;
+  color: #C0C0C0;
   font-size: 1.75rem;
   cursor: pointer;
 }
@@ -94,7 +100,8 @@ body {
 
 .dropdown-menu li {
   font-size: 1rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   cursor: pointer;
   padding: 0.5rem;
   border: #1a77da solid 2px;
@@ -116,16 +123,18 @@ body {
   margin-bottom: 0rem;
   margin-left: 17rem;
   margin-right: 17rem;
-  font-family: 'Baloo Chettan', cursive;
-  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #C0C0C0;
+  font-size: 2rem;
   text-transform: capitalize;
-  border-bottom: double #baa5ff 0.75rem;
+  border-bottom: double #C0C0C0; 0.75rem;
 }
 
 .bio p {
   text-align: center;
   padding: 1rem 7rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Cinzel', serif;
+  color: #C0C0C0;
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
@@ -133,15 +142,17 @@ body {
 /* ! Main Page Rulesets */
 
 table.center {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #459fff50;
+  margin: 3em auto;
+  background-color: #4561ff50;
+
 }
 
 th {
-  border: maroon solid 0.15rem;
-  font-size: 1.5rem;
-  font-family: 'Baloo Chettan', cursive;
+  font-size: 2.5em;
+  font-family: 'Montserrat', sans-serif;
+  color: #C0C0C0;
+  border-style: double;
+  border-color: black;
 }
 
 td {
@@ -149,12 +160,17 @@ td {
   height: 250px;
   text-align: center;
   vertical-align: middle;
-  font-family: 'Nunito', sans-serif;
-  border: maroon solid 0.15rem;
+  font-family: 'Cinzel', serif;
+  color: #C0C0C0;
   padding: 1px;
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: solid;
+  border-left-style: dotted;
+  border-color: black;
 }
 
-td.image {
+td.image-container {
   width: 250px;
   height: 250px;
 }
@@ -171,36 +187,8 @@ td img {
 
 /* ! Landing Page Footer  */
 
-footer {
-  margin-top: 1.5rem;
-  width: 100%;
-  box-shadow: 0 50vh 0 50vh #4577ffe0;
-}
 
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: #4778ffe0;
-}
 
-.flex-container ul {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-container a {
-  display: inline-block;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: black;
-}
-
-.flex-container a:hover {
-  color: blue;
-}
 
 /* ? Media Breakpoints 1083 and above we're good */
 
