@@ -5,17 +5,13 @@
 */
 
 /* ? Outside stylesheet and Font API imports  */
-@import url("https://fonts.googleapis.com/css?family=Cinzel:700|Montserrat:600|Raleway:500,700");
+@import url('https://fonts.googleapis.com/css?family=Cinzel:700|Montserrat:600|Raleway:500,700');
 
 /* ! General Rulesets */
 
 body {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.7), 
-    rgba(0, 0, 0, 0.7)
-  ),
-  url(../images/knightFight.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/knightFight.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -50,7 +46,7 @@ body {
 .header-box h1 {
   display: block;
   font-family: 'Montserrat', sans-serif;
-  color: #C0C0C0;
+  color: #c0c0c0;
   font-size: 6rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
@@ -73,7 +69,7 @@ body {
   color: black;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  color: #C0C0C0;
+  color: #c0c0c0;
   font-size: 1.75rem;
   cursor: pointer;
 }
@@ -124,17 +120,17 @@ body {
   margin-left: 17rem;
   margin-right: 17rem;
   font-family: 'Montserrat', sans-serif;
-  color: #C0C0C0;
+  color: #c0c0c0;
   font-size: 2rem;
   text-transform: capitalize;
-  border-bottom: double #C0C0C0; 0.75rem;
+  border-bottom: double #c0c0c0 0.75rem;
 }
 
 .bio p {
   text-align: center;
   padding: 1rem 7rem;
   font-family: 'Cinzel', serif;
-  color: #C0C0C0;
+  color: #c0c0c0;
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
@@ -144,15 +140,15 @@ body {
 table.center {
   margin: 3em auto;
   background-color: #4561ff50;
-
+  border: 1px solid black;
 }
 
 th {
   font-size: 2.5em;
   font-family: 'Montserrat', sans-serif;
-  color: #C0C0C0;
-  border-style: double;
-  border-color: black;
+  color: #c0c0c0;
+  padding: 2rem 0rem;
+  border-bottom: dotted black 3px;
 }
 
 td {
@@ -161,13 +157,20 @@ td {
   text-align: center;
   vertical-align: middle;
   font-family: 'Cinzel', serif;
-  color: #C0C0C0;
+  color: #c0c0c0;
   padding: 1px;
-  border-top-style: solid;
-  border-right-style: dotted;
-  border-bottom-style: solid;
-  border-left-style: dotted;
-  border-color: black;
+}
+
+td p {
+  border-bottom: double 8px black;
+}
+
+.first-row {
+  padding-top: 2rem;
+}
+
+tr > td {
+  padding-bottom: 3rem;
 }
 
 td.image-container {
@@ -182,13 +185,29 @@ td.review {
 
 td img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 25rem;
+  border-radius: 5px;
 }
 
 /* ! Landing Page Footer  */
 
+footer {
+  background-color: #459fff80;
+  box-shadow: 0 50vh 0 50vh #459fff80;
+  height: 8vh;
+}
 
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.footer-text {
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+  color: #000000f6;
+}
 
 /* ? Media Breakpoints 1083 and above we're good */
 
