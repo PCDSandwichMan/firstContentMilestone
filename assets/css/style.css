@@ -140,15 +140,16 @@ body {
 table.center {
   margin: 3em auto;
   background-color: #4561ff50;
-  border: 1px solid black;
+  border: 10px solid rgba(24, 23, 23, 0.836);
+  border-radius: 5%;
 }
 
 th {
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   color: #c0c0c0;
   padding: 2rem 0rem;
-  border-bottom: dotted black 3px;
+  border-bottom: dotted rgb(22, 21, 21) 5px;
 }
 
 td {
@@ -157,12 +158,13 @@ td {
   text-align: center;
   vertical-align: middle;
   font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
   color: #c0c0c0;
   padding: 1px;
 }
 
 td p {
-  border-bottom: double 8px black;
+  border-bottom: double 8px rgb(22, 21, 21);
 }
 
 .first-row {
@@ -185,8 +187,13 @@ td.review {
 
 td img {
   max-height: 100%;
-  max-width: 25rem;
-  border-radius: 5px;
+  max-width: 30rem;
+  border-radius: 70%;
+}
+
+#smaller-img {
+  max-height: 100%;
+  width: 13rem;
 }
 
 /* ! Landing Page Footer  */
