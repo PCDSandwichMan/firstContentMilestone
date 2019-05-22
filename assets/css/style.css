@@ -26,7 +26,7 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: #459fff80;
-  border: #4577ff4f solid .75rem;
+  border: #4577ff4f solid 0.75rem;
   border-radius: 20%;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -534,7 +534,7 @@ footer div {
 }
 /* ----------------------------------------------------------------------- */
 /* ? Pixel 2 XL */
-@media only screen and (min-width: 412px) and (max-device-width: 754px) {
+@media only screen and (min-width: 412px) and (max-device-width: 500px) {
   /* ! Header Rulesets */
   .title-box {
     border: #4577ff4f solid 0.4rem;
@@ -637,6 +637,112 @@ footer div {
     font-size: 0.8rem;
   }
 }
+/* ----------------------------------------------------------------------- */
+/* ? Filler Fix */
+@media only screen and (min-width: 501px) and (max-device-width: 754px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
+  }
+
+  .header-box h1 {
+    font-size: 2.35rem;
+    margin: 0.7rem auto 0rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 6.5rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 1.3rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 1.5em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
+    font-size: 0.75rem;
+  }
+
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: .5rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
 /* ----------------------------------------------------------------------- */
 /* ? IPad */
 @media only screen and (min-width: 755px) and (max-device-width: 960px) {
