@@ -9,11 +9,12 @@
 
 /* ! General Rulesets */
 
-body {
+html {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/knightFight.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
+    url(./knightFight.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -25,7 +26,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #459fff80;
-  border: #4577ff4f solid 1.5rem;
+  border: #4577ff4f solid .75rem;
   border-radius: 20%;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -137,18 +138,19 @@ body {
 
 /* ! Main Page Rulesets */
 
-table.center {
+.center-table {
   margin: 3em auto;
   background-color: #4561ff50;
   border: 10px solid rgba(24, 23, 23, 0.836);
   border-radius: 5%;
+  width: 100%;
 }
 
 th {
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   color: #c0c0c0;
-  padding: 2rem 0rem;
+  padding: 1rem 5rem;
   border-bottom: dotted rgb(22, 21, 21) 5px;
 }
 
@@ -175,11 +177,6 @@ tr > td {
   padding-bottom: 3rem;
 }
 
-td.image-container {
-  width: 250px;
-  height: 250px;
-}
-
 td.review {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -189,6 +186,7 @@ td img {
   max-height: 100%;
   max-width: 30rem;
   border-radius: 70%;
+  padding: 1rem;
 }
 
 #smaller-img {
@@ -215,108 +213,640 @@ footer div {
   padding-top: 0.2rem;
   color: #000000f6;
 }
-
-/* ? Media Breakpoints 1083 and above we're good */
-
-@media only screen and (max-device-width: 1082px) {
-  .bio h1 {
-    margin-left: 10rem;
-    margin-right: 10rem;
+/* ! --------------------------------------------- */
+/*               ! Media Queries                    */
+/* ! --------------------------------------------- */
+/* ? Galaxy S5 */
+@media only screen and (max-device-width: 361px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
   }
-}
 
-@media only screen and (max-device-width: 950px) {
   .header-box h1 {
-    font-size: 4rem;
+    font-size: 1.5rem;
+    margin: 0.7rem auto 0rem;
+  }
+
+  ul.navbar {
+    padding: 0;
   }
 
   .navbar a {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 6.5rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 0.7rem;
+    padding: 0.1rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 0.9rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 0.6rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
   }
 
   th {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-device-width: 859px) {
-  .header-box h1 {
-    font-size: 3.4rem;
-  }
-
-  .navbar a {
-    font-size: 1.2rem;
+    font-size: 1em;
+    padding-left: 2.3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
   }
 
-  .flex-container li {
-    font-size: 1rem;
+  td {
+    font-size: 0.5rem;
   }
 
-  .review,
-  .bio p,
-  .flex-container li {
-    font-size: 0.9rem;
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
   }
 
-  .bio h1 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (max-device-width: 632px) {
-  .header-box h1 {
-    font-size: 2.7rem;
+  .first-row {
+    padding-top: 0rem;
   }
 
-  .title-box {
-    border: #4577ff4f solid 1rem;
-  }
-
-  .bio h1 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 1.3rem;
-  }
-
-  .review,
-  .bio p,
-  .flex-container li {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (max-device-width: 560px) {
-  .navbar a {
-    font-size: 1rem;
-  }
-
-  .bio p {
-    padding: 0.5rem 2.5rem;
-  }
-
-  .bio h1 {
-    margin-left: 2.3rem;
-    margin-right: 2.3rem;
-    font-size: 1.3rem;
+  tr > td {
+    padding-bottom: 1rem;
   }
 
   td.review {
-    padding: 0rem 0.3rem;
-    margin: 0px;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 8vh;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
   }
 }
-
-@media only screen and (max-device-width: 542px) {
-  .bio h1 {
-    margin: 0.1rem 2.3rem;
-    font-size: 1.3rem;
-    font-size: 1rem;
+/* ---------------------------------------------------------------- */
+/* ? Iphone 6/7/8  */
+@media only screen and (min-width: 362px) and (max-device-width: 380px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
   }
 
-  .review,
+  .header-box h1 {
+    font-size: 1.9rem;
+    margin: 0.7rem auto 0rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    margin: 0rem auto;
+    padding: 0;
+    margin: 0;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 6.5rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 1.05rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
   .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 0.7rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 1em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 2.3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
+    font-size: 0.65rem;
+  }
+
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+/* ---------------------------------------------------------------- */
+/* ? Pixel 2 */
+@media only screen and (min-width: 381px) and (max-device-width: 411px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
+  }
+
+  .header-box h1 {
+    font-size: 2rem;
+    margin: 0.7rem auto 0rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 0.8rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 6.5rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 1.05rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 0.7rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 1em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 2.3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
     font-size: 0.6rem;
+  }
+
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+/* ----------------------------------------------------------------------- */
+/* ? Pixel 2 XL */
+@media only screen and (min-width: 412px) and (max-device-width: 754px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
+  }
+
+  .header-box h1 {
+    font-size: 2rem;
+    margin: 0.7rem auto 0rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 6.5rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 0.7rem;
+    padding: 0.15rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 1.05rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 0.7rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 1.2em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
+    font-size: 0.7rem;
+  }
+
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}
+/* ----------------------------------------------------------------------- */
+/* ? IPad */
+@media only screen and (min-width: 755px) and (max-device-width: 960px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.4rem;
+    margin: 0.5rem auto;
+  }
+
+  .header-box h1 {
+    font-size: 4rem;
+    margin: 0.7rem auto 0rem;
+    padding: 1rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 1.55rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 11rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    font-size: 2rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 2.2em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
+    font-size: 1.1rem;
+  }
+
+  td p {
+    border-bottom: double 5px rgb(22, 21, 21);
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 1.2rem;
+  }
+}
+/* ----------------------------------------------------------------------- */
+/* ? IPad Pro */
+@media only screen and (min-width: 961px) and (max-device-width: 1115px) {
+  /* ! Header Rulesets */
+  .title-box {
+    border: #4577ff4f solid 0.6rem;
+    margin: 0.5rem auto;
+  }
+
+  .header-box h1 {
+    font-size: 5rem;
+    margin: 0.7rem auto 0rem;
+    padding: 1rem;
+  }
+
+  ul.navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    font-size: 2.1rem;
+    margin: 0rem auto;
+  }
+  /* ! Dropdown menu */
+
+  .dropdown-menu {
+    width: 13rem;
+    border: #1a77da solid 1px;
+  }
+
+  .dropdown-menu li {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    border: #1a77da solid 1px;
+  }
+  /* ! Introduction Rulesets */
+  .bio h1 {
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2.2rem;
+    border-bottom: double #c0c0c0 0.3rem;
+  }
+
+  .bio p {
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  /* ! Main Page Rulesets */
+
+  .center-table {
+    margin: 1em auto;
+    border: 7px solid rgba(24, 23, 23, 0.836);
+  }
+
+  th {
+    font-size: 2.7em;
+    border-bottom: dotted rgb(22, 21, 21) 2.5px;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  td {
+    font-size: 1.3rem;
+  }
+
+  td p {
+    border-bottom: double 8px rgb(22, 21, 21);
+    padding: 0rem 2rem;
+  }
+
+  .first-row {
+    padding-top: 0rem;
+  }
+
+  tr > td {
+    padding-bottom: 1rem;
+  }
+
+  td.review {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  td img {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+  }
+
+  /* ! Landing Page Footer  */
+
+  footer {
+    box-shadow: 0 50vh 0 50vh #459fff80;
+    height: 0vh;
+  }
+
+  .footer-text {
+    font-size: 1.7rem;
   }
 }
