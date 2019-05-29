@@ -141,9 +141,8 @@ html {
 .center-table {
   margin: 3em auto;
   background-color: #4561ff50;
-  border: 10px solid rgba(24, 23, 23, 0.836);
-  border-radius: 5%;
   width: 100%;
+  box-shadow: 50vh 0#4561ff50;
 }
 
 th {
@@ -185,7 +184,7 @@ td.review {
 td img {
   max-height: 100%;
   max-width: 30rem;
-  border-radius: 70%;
+  border-radius: 5%;
   padding: 1rem;
 }
 
@@ -728,7 +727,7 @@ footer div {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
   }
 
   /* ! Landing Page Footer  */
