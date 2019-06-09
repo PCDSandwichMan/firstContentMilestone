@@ -1,17 +1,17 @@
 $(document).ready(() => {
-  $('.nav-item').on('mouseover', event => {
-    $('.dropdown-menu').slideUp('fast');
-    $(event.currentTarget)
-      .next()
-      .slideDown('fast');
-  });
-
-  // ? Dropdown close (edgecase handling)
-  $('.dropdown-menu').on('mouseleave', event => {
-    $('.dropdown-menu').slideUp('fast');
-  });
-
-  $(document).on('wheel', event => {
-    $('.dropdown-menu').slideUp('fast');
+  //! Nav Menu Drop Animation
+  $(function() {
+    $('ul.navbar > li').hover(
+      function() {
+        $(this)
+          .find('div.dropdown-menu')
+          .slideDown(300);
+      },
+      function() {
+        $(this)
+          .find('div.dropdown-menu')
+          .slideUp(400);
+      }
+    );
   });
 });
